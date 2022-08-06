@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevJobs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- ---------- HEADER ---------- -->
+      <header>
+        <nav class="max-width-wrapper">
+          <div class="logo">devjobs</div>
+
+          <div class="theme-control">
+            <span>
+              <i class="fa fa-solid fa-sun"></i>
+            </span>
+
+            <div class="custom-checkbox">
+              <input type="checkbox" />
+            </div>
+
+            <span>
+              <i class="fa fa-solid fa-moon"></i>
+            </span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- ---------- SEARCH BAR ---------- -->
+      <form class="max-width-wrapper search-form">
+        <div class="form-control">
+          <div class="tce-filter">
+            <span><i class="fa fa-solid fa-search"></i></span>
+
+            <input
+              type="search"
+              placeholder="Filter by title, companies, expertise..."
+            />
+          </div>
+
+          <div class="location-filter">
+            <span><i class="fa fa-solid fa-map"></i></span>
+
+            <input type="search" placeholder="Filter by location..." />
+          </div>
+
+          <div class="checkbox-filter">
+            <label>
+              <input type="checkbox" />
+
+              Full Time Only
+            </label>
+
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+      </form>
+
+      <!-- ---------- SEARCH BAR MOBILE ---------- -->
+      <form class="search-form-mobile">
+        <div class="form-control">
+          <div class="tce-filter">
+            <input
+              type="search"
+              placeholder="Filter by title, companies, expertise..."
+            />
+
+            <button class="search-btn">
+              <span><i class="fa fa-solid fa-search"></i></span>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- ---------- JOB LIST ---------- -->
+      <div class="job-listings max-width-wrapper"></div>
+
+      <!-- <div class="load-more-wrapper">
+        <button>Load More</button>
+      </div> -->
+
+      <ul class="pagination"></ul>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/796677fd42.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
